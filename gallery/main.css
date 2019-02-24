@@ -1,0 +1,23 @@
+.box {
+	max-width: 1080px;
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item {
+	width: 300px;
+	height: 300px;
+	margin: 30px;
+	background-color: pink;
+	box-shadow: 15px 15px 0 4px #2de0c7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+svg {
+	width: 80%;
+}
