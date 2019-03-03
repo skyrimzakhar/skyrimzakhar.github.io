@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		@keyframes apper {
+			from {
+				opacity: 0;
+			} 
+			to {
+				opacity:1;
+			}
+		}
+		.apper {
+			animation: apper 60s both;
+		}
+		img {
+			display: block;
+			width: 130px;
+			opacity: 0;
+		}
+
+		button {
+			padding: 10px 40px;
+			margin: 10px 0;
+		}
+
+		#rocks {
+			display: flex;
+			flex-wrap: wrap;
+			-ms-align-items: flex-start;
+			align-items: flex-start;
+		}
+	</style>
+</head>
+<body>
+	<button id="lol">спудер мен</button>
+	<!-- <img src="2.jpeg" alt=""> -->
+	<div id="rocks"></div>
+	<script>
+		var button = document.getElementById('lol');
+		var rocks = document.getElementById('rocks');
+		var src = '2.jpeg'
+		button.onclick = function() {
+			console.log('берегитесь фотогрофов')
+
+			var elem = document.createElement('img')
+			// elem.innerHTML = 'берегитесь фотогрофов'
+			elem.classList.add('apper')
+			elem.setAttribute('src', src)
+			rocks.appendChild(elem);
+		
+		}
+		
+		console.log('Hello world')
+	</script>
+</body>
+</html>
